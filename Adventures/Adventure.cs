@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dungeon_Dwellers.Adventures.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,15 @@ namespace Dungeon_Dwellers.Adventures
 {
     public class Adventure
     {
-        public string GUID { get; set; }
-        public int CompletionXPReward { get; set; }
-        public int CompletionGoldReward { get; set; }
-        public int MaxLevel { get; set; }
-        public int MinimumLevel { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public string GUID;
+        public int CompletionXPReward;
+        public int CompletionGoldReward;
+        public int MaxLevel;
+        public int MinimumLevel;
+        public string Title;
+        public string Description;
+        public List<Room> Rooms;
+
 
         public Adventure()
         {
